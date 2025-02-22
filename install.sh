@@ -29,6 +29,13 @@ cd ../..
 
 pip3 install pywal
 
+wget https://github.com/erebe/greenclip/releases/download/v4.2/greenclip
+
+sudo cp greenclip /usr/bin/greenclip
+## add green clip to path 
+
+sudo apt install xclip 
+
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
@@ -46,3 +53,5 @@ echo "Done! Grab some wallpaper and run pywal -i filename to set your color sche
 echo "After reboot: Select i3 on login, run lxappearance and select arc-dark"
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
